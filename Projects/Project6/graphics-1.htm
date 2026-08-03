@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rent a Pet - Graphics</title>
+
+<style type="text/css">
+	#thumbs, #image {
+		width: 700px;
+		border: solid 1px #000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;
+		padding: 5px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+		
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:400px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	logo1.src = "CookingImages/NC_logo.png"
+	logo2.src = "CookingImages/NC_logo_pushed.png"
+}
+
+
+			var imgArray = new Array(
+			'JelloCakeLg2.jpg',
+			'Pasta1Lg2.jpg',
+			'RasberryCakeLg2.jpg',
+			'VeggiesLg2.jpg'
+			);
+
+
+		var titleArray = new Array(
+			'A Jelly Mousse Cake',
+			'Ingredients For a Pasta Dish',
+			'Raspberry Cake!',
+			'Veggies on a Kebab. Yum yub!'
+			
+		);
+			
+			var imgPath = "CookingImages/Lg/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body  onload="preloadImages()">
+<div style="text-align: center;">
+<a href="" onmouseover="document.getElementById('print').src='CookingImages/Print_button_pushed.png';" onmouseout="document.getElementById('print').src='CookingImages/Print_button.png';">
+<img src="CookingImages/Print_button.png" alt="Print Page" width="200" height="50" id="print"></a>
+</div>
+
+
+<div align="center">
+
+
+<div id="logo">
+		<a href="#" onMouseOver="document.logo.src=logo2.src;"
+		onclick="return false;"
+	onMouseOut="document.logo.src=logo1.src;">
+
+		<img src="CookingImages/NC_logo.png" width="150" height="150" 
+	name="logo" alt="logo" style="border:none;"/>
+
+	</a>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="thumbs">
+		<img src="CookingImages/Thumb/JelloCakeSm.jpg" alt="A delecious Utah Jello cake" onmouseover="swapImage(0);" />
+		<img src="CookingImages/Thumb/Pasta1Sm.jpg" alt="Making a meal with some pasta" onmouseover="swapImage(1);" />
+		<img src="CookingImages/Thumb/RasberryCakeSm.jpg" alt="A cake with some rasberry" onmouseover="swapImage(2);" />
+		<img src="CookingImages/Thumb/VeggiesSm.jpg" alt="Veggies! Yum yub. " onmouseover="swapImage(3);" />
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="CookingImages/Lg/JelloCakeLg2.jpg" alt="A delecious Utah Jello cake" />
+		<h3 id="bottomText">Newlyweds Sailing</h3>
+	</div>
+
+<img src="CookingImages/Ugly_background.png">
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+</div>
+  
+
+</body>
+</html>
