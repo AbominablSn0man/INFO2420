@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Native Cooking Home</title>
+<link rel="stylesheet" href="mystyles.css">
+<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body  onload="preloadImages()">
+
+	<header>
+<div id="logo">
+		
+    <a href="home.html" onMouseOver="document.logo.src=logo2.src;" onMouseOut="document.logo.src=logo1.src;">
+	<img src="Images/NC_logo.png" width="150" height="150" name="logo" alt="logo" style="border:none;" class="left"/>
+	</a>
+    <img src="Images/NC_banner.png" alt="Native Cooking Banner">
+</div>
+</header>
+
+<section>
+    <nav>
+		<a href="home.html">Home Page&nbsp</a><br>
+		<a href="#">About Us &nbsp;&nbsp&nbsp;</a><br>
+		<a href="#">Tributes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+		<a href="#">My Favorites</a><br>
+		<a href="#">Survey Page&nbsp;</a>
+	</nav>
+    <article>
+    <h1>Welcome to Native Cooking of Utah!</h1>
+    <p>
+    	If you love to cook like we do, you should enjoy looking around this site. <br>
+    	Take a look at our Recipes and take the opportunity to complete our survey.
+    </p>
+    <div id="thumbs">
+		<img src="Images/Thumb/JelloCakeSm.jpg" alt="A Jelly Mousse Cake" onmouseover="swapImage(0);" />
+		<img src="Images/Thumb/Pasta1Sm.jpg" alt="Making a meal with some pasta" onmouseover="swapImage(1);" />
+		<img src="Images/Thumb/RasberryCakeSm.jpg" alt="A cake with some rasberry" onmouseover="swapImage(2);" />
+		<img src="Images/Thumb/VeggiesSm.jpg" alt="Veggies! Yum yub. " onmouseover="swapImage(3);" />
+        </div>
+
+	<div id="image">
+		<img id="theImage" src="Images/Lg/JelloCakeLg2.jpg" alt="A Jelly Mousse Cake" />
+		<h3 id="bottomText">A Jelly Mousse Cake</h3>
+	</div>
+	<hr>
+<h2>What People Are Saying About Us</h2>
+<img src="Images/EatingSmall.jpg" alt="Janet enjoying native cooking" width="167" class="right" />
+<blockquote class="testimonial">
+   <p>My favorite pastime is cooking. I was glad to find this web site about Native Cooking of Utah. I like to make sure the items I choose to cook meet the needs of my target audience. I have found the recipes in this collection to be wildly popular with my Utah neighbors and family members. </p>
+   <p>Janet Waters<br>Salt Lake City, Utah</p>
+</blockquote>
+<hr class="clear">
+    </article>
+</section>
+
+
+<footer>
+   <p>Email us: <a href="mailto:BenV@uvu.edu">BenV@uvu.edu</a></p>
+   <p>This web site has been created solely for educational purposes.</p>
+</footer>
+
+</body>
+</html>

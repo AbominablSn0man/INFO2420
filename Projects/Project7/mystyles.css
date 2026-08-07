@@ -1,0 +1,144 @@
+@font-face{
+   font-family:'Pompiere-Regular';
+   src: url(../../Fonts/Pompiere-Regular.ttf) format(truetype);
+}
+
+body{
+   background-color: #FFF8EE;
+   font-family: Geneva, sans-serif;
+   color: #2e012b;
+   font-size: 100%;
+}
+header {
+			width: 900px;
+			height: 200px;
+			border:3px solid #8E8989;
+			background-color: #F1E5D4;
+		text-align: center;
+		padding-top: 10px;
+			margin: auto;	
+	}
+
+footer {
+   width: 900px;
+   height: 80px;
+   background-color: #AAB6B2;
+   text-align: center;
+   margin: auto;
+   border: 3px solid #846161;
+   padding-top: 10px;
+   box-sizing: border-box;
+}
+
+footer p {
+   margin: 5px;
+}
+p{
+   line-height: 1.5em;
+}
+
+h1{
+   font-family: 'Pompiere-Regular';
+   font-size: 3.5em;
+   text-align: center;
+}
+
+h2{
+   font-family: 'Pompiere-Regular';
+   font-size: 2.2em;
+}
+
+h3{
+   text-shadow: 0px 1px 2px #af8fad;
+   letter-spacing: 0.125em
+}
+
+blockquote{
+   font-style: italic;
+   text-align: left;
+}
+
+.testimonial {
+   margin: 15px 20px;
+}
+
+.clear {
+   clear: both;
+}
+
+a:link{
+   color: #696787;
+
+}
+
+a:visited{
+   color: #696787;
+}
+
+a:hover{
+   color: #759087;
+}
+
+.left	{
+   float: left;
+		padding-right: 15px;
+		border: none;
+}
+
+.right{
+   float: right;
+		padding-left: 15px;
+		border: none;
+}
+
+nav {
+		float: left;
+		width: 250px;
+}
+
+nav a:link {
+font-family: Pompiere-Regular;
+border: 5px inset #000000;
+background-color: #AAB6B2;
+line-height: 250%;
+font-weight: bold;
+font-size: 40px;
+text-decoration: none;
+text-align: center;
+padding-left: 12px;
+padding-top: 8px;
+padding-right: 12px;
+padding-bottom: 2px;
+margin-left: 20px;
+}
+
+article{
+   float: left;
+   width: 650px;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+   } 
+
+#thumbs img {
+   width: 120px;
+   height: auto;
+   margin: 4px;
+}
+
+#image {
+   margin-top: 15px;
+}
+
+#image img {
+   max-width: 150%;
+}
+
+section {
+		width: 900px;
+		background-image: url("Images/Ugly_background.png");
+		background-repeat: repeat-y;
+		overflow: hidden;
+		margin: auto;
+		border:3px solid #846161;
+}
